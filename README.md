@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Andile Dudu - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Live Website:** https://my-portfolio-bc5a5.web.app
 
-## Available Scripts
+## About This Project
 
-In the project directory, you can run:
+This is my personal portfolio website built to showcase my skills, projects, and professional profile as a Computer Science student at Wits University.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Pages
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Page | URL | Content |
+|------|-----|---------|
+| Home | `/` | My name, title, and resume download |
+| Skills | `/skills` | Technologies I work with |
+| Projects | `/projects` | My coding projects |
+| Contact | `/contact` | Form to send me messages |
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+| Technology | Purpose |
+|------------|---------|
+| **React** | Frontend framework for building the UI |
+| **React Router** | Handles navigation between pages |
+| **Firebase Firestore** | Database to store contact form messages |
+| **Firebase Hosting** | Hosts the live website |
+| **EmailJS** | Sends email notifications for contact form submissions |
+| **CSS** | Styling and layout |
+| **Git & GitHub** | Version control and source code hosting |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+✅ 4-page portfolio (Home, Skills, Projects, Contact)  
+✅ Fully responsive design  
+✅ Contact form that saves to Firebase  
+✅ Email notifications when someone submits the contact form  
+✅ SEO-friendly with meta tags  
+✅ Live deployment on Firebase Hosting  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How the Contact Form Works
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. User enters name, email, and message
+2. Clicks "Send Message"
+3. Data is saved to Firebase Firestore
+4. EmailJS sends a notification to my inbox
+5. User sees success confirmation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Structure
