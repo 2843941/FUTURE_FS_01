@@ -9,8 +9,8 @@ function ProjectsPage() {
       description: "Todo app with real-time updates"
     },
     {
-      title: "Weather App",
-      description: "Shows weather based on user location"
+      title: "Finance Tracker Web App",
+      description: "Shows your spendings of your money"
     }
   ];
 

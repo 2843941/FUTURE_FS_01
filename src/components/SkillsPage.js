@@ -5,7 +5,9 @@ function SkillsPage() {
     "HTML/CSS",
     "Firebase",
     "Python",
-    "Git"
+    "Git",
+    "Java",
+    "C++ / C"
   ];
 
   return (

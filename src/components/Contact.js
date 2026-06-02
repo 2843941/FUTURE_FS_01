@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { db } from '../firebase';
 import { collection, addDoc } from 'firebase/firestore';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
   const [name, setName] = useState('');
@@ -13,12 +14,28 @@ function Contact() {
     setStatus('sending');
     
     try {
+      // Save to Firebase
       await addDoc(collection(db, 'messages'), {
         name: name,
         email: email,
         message: message,
         timestamp: new Date()
       });
+      
+      // Send email notification
+      const templateParams = {
+        name: name,
+        email: email,
+        message: message,
+      };
+      
+      await emailjs.send(
+        'service_s3744fc',     
+        'template_nsuezbw',    
+        templateParams,
+        '_prA54yzYiJgjaREJ'      
+      );
+      
       setStatus('success');
       setName('');
       setEmail('');
@@ -81,7 +98,7 @@ function Contact() {
           >
             {status === 'sending' ? 'Sending...' : 'Send Message'}
           </button>
-          {status === 'success' && <p style={{ color: 'green', textAlign: 'center', marginTop: '15px' }}>Message sent successfully!</p>}
+          {status === 'success' && <p style={{ color: 'green', textAlign: 'center', marginTop: '15px' }}>Message sent! I'll reply soon.</p>}
           {status === 'error' && <p style={{ color: 'red', textAlign: 'center', marginTop: '15px' }}>Error sending message. Try again.</p>}
         </form>
       </div>
