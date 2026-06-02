@@ -35,12 +35,12 @@ This is my personal portfolio website built to showcase my skills, projects, and
 
 ## Features
 
-✅ 4-page portfolio (Home, Skills, Projects, Contact)  
-✅ Fully responsive design  
-✅ Contact form that saves to Firebase  
-✅ Email notifications when someone submits the contact form  
-✅ SEO-friendly with meta tags  
-✅ Live deployment on Firebase Hosting  
+ 4-page portfolio (Home, Skills, Projects, Contact)  
+ Fully responsive design  
+ Contact form that saves to Firebase  
+ Email notifications when someone submits the contact form  
+ SEO-friendly with meta tags  
+ Live deployment on Firebase Hosting  
 
 ---
 
@@ -52,6 +52,3 @@ This is my personal portfolio website built to showcase my skills, projects, and
 4. EmailJS sends a notification to my inbox
 5. User sees success confirmation
 
----
-
-## Project Structure
